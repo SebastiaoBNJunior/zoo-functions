@@ -46,7 +46,7 @@ describe('Testes da função HandlerElephants', () => {
     const expected = 'Parâmetro inválido, é necessário uma string';
     expect(actual).toBe(expected);
   });
-  
+
   it('Retorna null quando uma string inválida é passada como argumento', () => {
     const actual = computeData('invalid');
     expect(actual).toBeNull();
