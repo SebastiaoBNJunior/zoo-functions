@@ -1,7 +1,7 @@
 const getOpeningHours = require('../src/getOpeningHours');
 
 describe('Testes da função getOpeningHours', () => {
-  it('Esta função recebe como argumentos um dia da semana e um horário, e retorna uma mensagem informando se o zoológico está aberto ou não naquela data e hora.', () => {
+  it('Se não for passado nenhum parametro da função deve retornar toda a lista de horários', () => {
     const actual = getOpeningHours('', '');
     expect(actual).toEqual({
       Tuesday: { open: 8, close: 6 },
