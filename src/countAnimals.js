@@ -24,5 +24,4 @@ const countAnimals = (animal) => {
 
   return countSpecies.residents.length;
 };
-
 module.exports = countAnimals;
