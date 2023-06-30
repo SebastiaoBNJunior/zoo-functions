@@ -7,5 +7,4 @@ const getAnimalsOlderThan = (species, age) => {
     ? speciesData.residents.every((resident) => resident.age >= age)
     : 'Espécie não encontrada';
 };
-
 module.exports = getAnimalsOlderThan;
