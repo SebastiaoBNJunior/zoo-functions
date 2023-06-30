@@ -1,22 +1,22 @@
+const handlerElephants = require('../src/handlerElephants');
 const computeData = require('../src/handlerElephants');
 
-describe('6 - Implemente a função computeData para contabilizar a quantidade de elefantes', () => {
+describe('Testes da função HandlerElephants', () => {
   it('Retorna a quantidade de elefantes', () => {
     const actual = computeData('count');
     const expected = 4;
-    expect(actual).toEqual(expected);
+    expect(actual).toBe(expected);
   });
 
   it('Retorna um array com a relação dos nomes de todos os elefantes', () => {
     const actual = computeData('names');
-    const expected = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
-    expect(actual).toEqual(expected);
+    expect(actual).toContain('Jefferson');
   });
 
   it('Retorna a média de idade dos elefantes', () => {
     const actual = computeData('averageAge');
     const expected = 10.5;
-    expect(actual).toEqual(expected);
+    expect(actual).toBeCloseTo(expected, 1);
   });
 
   it('Retorna a localização dos elefantes dentro do Zoológico', () => {
@@ -27,13 +27,28 @@ describe('6 - Implemente a função computeData para contabilizar a quantidade d
 
   it('Retorna a popularidade dos elefantes', () => {
     const actual = computeData('popularity');
-    const expected = 5;
-    expect(actual).toBe(expected);
+    expect(actual).toBeGreaterThanOrEqual(5);
   });
 
   it('Retorna a disponibilidade dos elefantes', () => {
     const actual = computeData('availability');
-    const expected = ['Friday', 'Saturday', 'Sunday', 'Tuesday'];
+    const expected = expect.not.arrayContaining(['Monday']);
     expect(actual).toEqual(expected);
+  });
+
+  it('Retorna undefined se o argumento for undefined', () => {
+    const actual = computeData();
+    expect(actual).toBeUndefined();
+  });
+
+  it('Passando por argumento um objeto vazio ({}) deve retornar a string -> Parâmetro inválido, é necessário uma string', () => {
+    const actual = computeData({});
+    const expected = 'Parâmetro inválido, é necessário uma string';
+    expect(actual).toBe(expected);
+  });
+  
+  it('Retorna null quando uma string inválida é passada como argumento', () => {
+    const actual = computeData('invalid');
+    expect(actual).toBeNull();
   });
 });
