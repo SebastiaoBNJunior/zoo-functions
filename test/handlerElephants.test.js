@@ -1,5 +1,4 @@
 const handlerElephants = require('../src/handlerElephants');
-const computeData = require('../src/handlerElephants');
 
 describe('Testes da função HandlerElephants', () => {
   it('Retorna a quantidade de elefantes', () => {
