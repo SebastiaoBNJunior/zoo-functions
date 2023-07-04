@@ -51,20 +51,16 @@ const list = [
   },
 ];
 
-const getEmployeesByName = (x) => {
-  list.find((names) => names.fullName.includes(x.name));
-};
+const getEmployeesByName = (x) => list.find((names) => names.fullName.includes(x.name));
 
-const getEmployessById = (x) => {
-  list.find((ids) => ids.id.includes(x.id));
-};
+const getEmployessById = (x) => list.find((ids) => ids.id.includes(x.id));
 
 const getEmployeesCoverage = (employeeTarget) => {
   if (!employeeTarget) {
     return list;
   }
   if (data.employees.find((employee) => employee.firstName === employeeTarget.name
-  || employee.lastName === employeeTarget.name)) {
+|| employee.lastName === employeeTarget.name)) {
     return getEmployeesByName(employeeTarget);
   }
   if (data.employees.find((employee) => employee.id === employeeTarget.id)) {
@@ -74,4 +70,5 @@ const getEmployeesCoverage = (employeeTarget) => {
     throw new Error('Informações inválidas');
   }
 };
+console.log(getEmployeesCoverage({ name: 'Sharonda' }));
 module.exports = getEmployeesCoverage;
