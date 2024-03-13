@@ -1,10 +1,42 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+#🦘🐅🦓 Zoo Functions 🐖🦍🐘
+
+This is the final project of the Fundamentals module at the `Trybe` programming school.
+
+The main objective of this project is to apply JavaScript knowledge to manage various zoo-related information, 
+including animal counts, species varieties, geographic origins, as well as the registration of individuals 
+responsible for the maintenance and care of the animals on-site.
+
+
+<details>
+  <summary><strong>🏗 Project structure</strong></summary><br />
+
+The implemented functions are inside the `src` folder and their respective tests are in the `tests` folder
+
+Built files:
+📁 src/
+📁 test/
+
+</details>
+
+<details>
+  <summary><strong>🔎 Linter</strong></summary><br />
+  
+### ESLint
+
+To ensure code quality, the `ESLint` was used in this project.
+So the code will be available with good development practices, being more readable and easy to maintain!
+
+ESLint is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. In many ways it is similar to JSLint and JSHint with a few exceptions:
+
+* ESLint uses Espree for JavaScript parsing.
+* ESLint uses an AST to evaluate patterns in code.
+* ESLint is completely 'pluggable', each of the rules is a plugin and you can add […]
+
+</details>
+
+<details>
+  <summary><strong>🗣 Feedbacks</strong></summary><br />
+  
+_Give me feedbacks, I'm open to new ideas_ 😉
+
+</details>
