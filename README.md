@@ -1,4 +1,6 @@
-# 🦘🐅🦓 Zoo Functions 🐖🦍🐘
+<div align="center">
+  <h1>🦘🐅🦓 Zoo Functions 🐖🦍🐘</h1>
+</div>
 
 This is the final project of the Fundamentals module at the `Trybe` programming school.
 
