@@ -8,13 +8,16 @@ The main objective of this project is to apply JavaScript knowledge to manage va
 including animal counts, species varieties, geographic origins, as well as the registration of individuals 
 responsible for the maintenance and care of the animals on-site.
 
+## 👨‍💻 Language and Technologies used
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 <details>
   <summary><strong>🏗 Project structure</strong></summary><br />
 
 The implemented functions are inside the `src` folder and their respective tests are in the `tests` folder
 
-Built files:
+Built folders:
 📁 src/
 📁 test/
 
