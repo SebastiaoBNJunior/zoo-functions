@@ -1,4 +1,4 @@
-#🦘🐅🦓 Zoo Functions 🐖🦍🐘
+# 🦘🐅🦓 Zoo Functions 🐖🦍🐘
 
 This is the final project of the Fundamentals module at the `Trybe` programming school.
 
